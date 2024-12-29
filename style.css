@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html{
@@ -21,7 +23,7 @@ body{
 
 .container{
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: rgba(255, 255, 255, 0.259);
     backdrop-filter: blur(15px);
     padding: 1rem;
@@ -32,20 +34,25 @@ body{
     -o-border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
-
-.inputs{
+.cityEntry{
     width: 100%;
-    height: 8%;
+}
+.inputs{
+    width: 50%;
+    padding: .1rem;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.818);
     position: relative;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.678);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -67,39 +74,47 @@ input{
     width: 100%;
     outline: none;
 }
+
+/* mian weather  */
+
 .weather_report{
-    width: 100%;
+    padding: 2rem 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     gap: 1rem;
+    font-size: 180%;
+    background-color: rgba(255, 255, 255, 0.322);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.8rem;
+}
+.weather_report:hover{
+    background-color:rgba(255, 255, 255, 0.506);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 
-.weather_temprature{
-    font-size: 10rem;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: white;
+.weather_icon{
 
-}
-.weather_temprature sup{
     font-size: 6rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.weather_condition{
-    font-size: 3rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-.weather_report_lower_higher{
+.weather_MinMax{
     display: flex;
     gap: 1rem;
-    color: white;
-    font-size: 2rem;
-
 }
+
+
+/* extra weather info  */
 
 .moreInfo{
     width: 98.2%;
@@ -126,7 +141,6 @@ input{
     display: flex;
     align-items: center;
     font-size: 2.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     gap: 4rem;
 
 }
