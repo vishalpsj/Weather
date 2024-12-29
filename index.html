@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- search city -->
+    <div class="container">
+        <div class="inputs">
+            <div id="searchicon"><i class="ri-search-line"></i></div>
+            <input type="text" placeholder="Search your city..." id="searchCity" required autocomplete="off">
+        </div>
+
+    <!-- main weather report -->
+        <div class="weather_report">
+            <h2 class="weather_city"></h2>
+            <p class="date_time"></p>
+            <div class="weather_data">
+                <p class="weather_forcast"></p>
+                <div class="weather_icon"></div>
+            </div>
+            <p class="weather_temprature"></p>
+            <div class="weather_MinMax">
+                <p class="min"></p>
+                <p class="max"></p>
+            </div>
+        </div>
+    
+    <!-- addtional info  -->
+        <div class="moreInfo">
+            <div class="extra feelsLike">
+                <i class="ri-temp-hot-line"></i>
+                <div class="feelsLike_content">
+                    <p>Feels like</p>
+                    <p>15&deg;</p>
+                </div>
+            </div>
+            <div class="extra humidity">
+                <i class="ri-water-percent-fill"></i>
+                <div class="humidity_content">
+                    <p>Humidity</p>
+                    <p>80&percnt;</p>
+                </div>
+            </div>
+            <div class="extra wind">
+                <i class="ri-windy-line"></i>
+                <div class="wind_content">
+                    <p>Wind</p>
+                    <p>3.8 m/s</p>
+                </div>
+            </div>
+            <div class="extra pressure">
+                <i class="ri-speed-up-fill"></i>
+                <div class="pressure_content">
+                    <p>Pressure</p>
+                    <p>983hPa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
