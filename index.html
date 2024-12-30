@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="./asset/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,17 +26,16 @@
         </div>
 
         <div class="errorMsgbox">
-            <p>Oops.. <i class="ri-error-warning-fill"></i></p>
+            <p id="oopsError"><b>Oops...</b></p>
             <p id="errorShowing"></p>
         </div>
 
         <!-- main weather report -->
         <div class="weather_report">
             <h1 class="weather_city"></h1>
-            <p class="date_time"></p>
             <div class="weather_data">
-                <p class="weather_forcast"></p>
-                <div class="weather_icon"></div>
+                <p class="weather_forcast dataOfweather"></p>
+                <div class="weather_icon dataOfweather"></div>
             </div>
             <p class="weather_temprature"></p>
             <div class="weather_MinMax">
