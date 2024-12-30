@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather app, using api, real time weather">
     <title>Weather</title>
+    <link rel="shortcut icon" href="./asset/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
@@ -39,29 +41,29 @@
             <div class="extra feelsLike">
                 <i class="ri-temp-hot-line"></i>
                 <div class="feelsLike_content">
-                    <p>Feels like</p>
-                    <p>15&deg;</p>
+                    <p><b>Feels like</b></p>
+                    <p id="feelsLike">15&deg;</p>
                 </div>
             </div>
             <div class="extra humidity">
                 <i class="ri-water-percent-fill"></i>
                 <div class="humidity_content">
-                    <p>Humidity</p>
-                    <p>80&percnt;</p>
+                    <p><b>Humidity</b></p>
+                    <p id="humidity">80&percnt;</p>
                 </div>
             </div>
             <div class="extra wind">
                 <i class="ri-windy-line"></i>
                 <div class="wind_content">
-                    <p>Wind</p>
-                    <p>3.8 m/s</p>
+                    <p><b>Wind</b></p>
+                    <p id="wind">3.8 m/s</p>
                 </div>
             </div>
             <div class="extra pressure">
                 <i class="ri-speed-up-fill"></i>
                 <div class="pressure_content">
-                    <p>Pressure</p>
-                    <p>983hPa</p>
+                    <p><b>Pressure</b></p>
+                    <p id="pressure">983hPa</p>
                 </div>
             </div>
         </div>
