@@ -25,12 +25,14 @@
                 <input type="text" placeholder="Search your city..." id="searchCity" required autocomplete="off">
             </form>
         </div>
-
+    
+    <!-- it will show an error message if the city that search is not available -->
         <div class="errorMsgbox">
             <p id="oopsError"><b>Oops...</b></p>
             <p id="errorShowing"></p>
         </div>
 
+        
         <!-- main weather report -->
         <div class="weather_report">
             <h1 class="weather_city"></h1>
@@ -44,6 +46,7 @@
                 <p class="max"></p>
             </div>
         </div>
+
 
         <!-- addtional info  -->
         <div class="moreInfo">
@@ -77,6 +80,8 @@
             </div>
         </div>
     </div>
+
+    <!-- calling javascript -->
     <script src="./script.js"></script>
 </body>
 

@@ -6,10 +6,8 @@
     font-family: "Urbanist", serif;
 }
 
-html{
-    font-size: 62.5%;
-}
 
+/* superscript to show the c as unit celsius */
 sup{
     font-size: 3.5rem;
     font-weight: 600;
@@ -17,8 +15,7 @@ sup{
 
 body{
     width: 100vw;
-    /* height: 100vh; */
-    background-image: url(./asset/img/mobile_screen.webp);
+    background-image: url(./asset/img/background_small.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
