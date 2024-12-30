@@ -19,14 +19,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .container{
     width: 80%;
-    height: 90%;
     background-color: rgba(255, 255, 255, 0.259);
     backdrop-filter: blur(15px);
     padding: 1rem;
+    margin-top: 5rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -75,6 +76,23 @@ input{
     outline: none;
 }
 
+/* error showing  */
+.errorMsgbox{
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    display: none;
+}
+
+.errorMsgbox p{
+    font-size: 4rem;
+}
+
+
 /* mian weather  */
 
 .weather_report{
@@ -92,7 +110,7 @@ input{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 .weather_report:hover{
     background-color:rgba(255, 255, 255, 0.506);
@@ -103,8 +121,28 @@ input{
     -o-transition: all .3s;
 }
 
-.weather_icon{
+.weather_forcast{
+    background-color: #333333c6;
+    padding: .8rem 2rem;
+    color: #fff;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
 
+.weather_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_temprature{
     font-size: 6rem;
 }
 
@@ -123,9 +161,9 @@ input{
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    position: absolute;
+    /* position: absolute;
     bottom: 2rem;
-    padding: 0 0;
+    padding: 0 0; */
 }
 
 .extra{

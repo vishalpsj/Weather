@@ -15,10 +15,15 @@
     <!-- search city -->
     <div class="container">
         <div class="cityEntry">
-            <div class="inputs">
+            <form class="inputs">
                 <div id="searchicon"><i class="ri-search-line"></i></div>
                 <input type="text" placeholder="Search your city..." id="searchCity" required autocomplete="off">
-            </div>
+            </form>
+        </div>
+
+        <div class="errorMsgbox">
+            <p>Oops.. <i class="ri-error-warning-fill"></i></p>
+            <p id="errorShowing"></p>
         </div>
 
         <!-- main weather report -->
@@ -42,28 +47,28 @@
                 <i class="ri-temp-hot-line"></i>
                 <div class="feelsLike_content">
                     <p><b>Feels like</b></p>
-                    <p id="feelsLike">15&deg;</p>
+                    <p id="feelsLike"></p>
                 </div>
             </div>
             <div class="extra humidity">
                 <i class="ri-water-percent-fill"></i>
                 <div class="humidity_content">
                     <p><b>Humidity</b></p>
-                    <p id="humidity">80&percnt;</p>
+                    <p id="humidity"></p>
                 </div>
             </div>
             <div class="extra wind">
                 <i class="ri-windy-line"></i>
                 <div class="wind_content">
                     <p><b>Wind</b></p>
-                    <p id="wind">3.8 m/s</p>
+                    <p id="wind"></p>
                 </div>
             </div>
             <div class="extra pressure">
                 <i class="ri-speed-up-fill"></i>
                 <div class="pressure_content">
                     <p><b>Pressure</b></p>
-                    <p id="pressure">983hPa</p>
+                    <p id="pressure"></p>
                 </div>
             </div>
         </div>
