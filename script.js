@@ -25,7 +25,7 @@ const getwindspeed = (s) => {
     return s * 3.6
 }
 
-let theCityName = "new delhi"
+let theCityName = "mumbai"
 
 const getWeatherData = async () => {
     // api url
@@ -35,15 +35,15 @@ const getWeatherData = async () => {
     try {
         const res = await fetch(weatherAPI_url)
         const data = await res.json()
-        console.log(data);
+        // console.log(data);
         const { main, name, sys, weather, wind } = data;
 
         city.innerText = `${name}, ${generateCountryName(sys.country)}`
         weather_forcast.innerHTML = weather[0].main
         weather_temprature.innerHTML = `${main.temp.toFixed()}&deg<sup>c</sup>`
         weather_icon.innerHTML = `<img src="https://openweathermap.org/img/wn/${weather[0].icon}@2x.png"></img>`
-        min.innerHTML = `Min: ${main.temp_min.toFixed()}&deg;`;
-        max.innerHTML = `Max: ${main.temp_max.toFixed()}&deg;`
+        min.innerHTML = `<b>Min: ${main.temp_min.toFixed()}&deg;</b>`;
+        max.innerHTML = `<b>Max: ${main.temp_max.toFixed()}&deg;</b>`
         feelsLike.innerHTML = `${main.feels_like.toFixed()}&deg;`
         humidity.innerHTML = `${main.humidity}&percnt;`
         const speedofWind = wind.speed

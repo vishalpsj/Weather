@@ -29,14 +29,6 @@
         width: 48%;
     }
 }
-@media screen and (min-width:1024px) {
-    html{
-        font-size: 75%;
-    }
-}
-@media screen and (min-width:1440px) {
-    html{
-        font-size: 81.25%;
-    }
-}
+
+
 
