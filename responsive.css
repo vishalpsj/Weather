@@ -7,20 +7,16 @@
         font-size: 62.5%;
     }
 }
+@media screen and (min-width:500px) {
+    .theme{
+        margin-right: 2rem;
+    }
+}
 
 /* tablet screen and larger */
 @media screen and (min-width:768px) {
     html{
         font-size: 68.75%;
-    }
-    .container{
-        width: 95%;
-        margin: 2rem 0;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
     }
     .errorMsgbox{
         height: 68vh;
@@ -31,12 +27,16 @@
     .extra{
         width: 48%;
     }
+    .theme{
+        margin-right: 3rem;
+    }
+
 }
 
 /* laptop and larger screen  */
 
 @media screen and (min-width:1024px) {
     body{
-        background-image: url(./asset/img/background_large.webp);
+        background-image: var(--background-img-large);
     }
 }

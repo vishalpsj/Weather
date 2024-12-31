@@ -14,6 +14,10 @@ let feelsLike = document.getElementById('feelsLike')
 let humidity = document.getElementById('humidity')
 let windSpeed = document.getElementById('wind')
 let pressure = document.getElementById('pressure')
+let theCityNameis
+let theme = document.querySelector('.theme')
+let dark = document.querySelector('.dark')
+let light = document.querySelector('.light')
 
 //getting country full name from its code
 
@@ -63,7 +67,8 @@ document.body.addEventListener('load', getWeatherData())
 inputs.addEventListener('submit', (e) => {
     e.preventDefault()
     let searchCity = document.getElementById('searchCity')
-    theCityName = searchCity.value
+    theCityNameis = searchCity.value
+    theCityName = theCityNameis.trim()
     reportBox.style.display = "flex"
     moreInfo.style.display = "flex"
     document.querySelector('.errorMsgbox').style.display = "none"
@@ -75,7 +80,8 @@ inputs.addEventListener('submit', (e) => {
 searchicon.addEventListener('click', (e) => {
     e.preventDefault()
     let searchCity = document.getElementById('searchCity')
-    theCityName = searchCity.value
+    theCityNameis = searchCity.value
+    theCityName = theCityNameis.trim()
     reportBox.style.display = "flex"
     moreInfo.style.display = "flex"
     document.querySelector('.errorMsgbox').style.display = "none"
@@ -83,3 +89,29 @@ searchicon.addEventListener('click', (e) => {
 
     searchCity.value = ""
 })
+
+
+
+
+
+
+
+// theme functionings
+let mode = 1
+
+const handleThmeclick = (icon) => {
+    if(mode === 1){
+        dark.style.display = 'none'
+        light.style.display = 'flex'
+        document.body.className = 'darkTheme'
+        mode = 0   
+    }else if(mode === 0){
+        dark.style.display = 'flex'
+        light.style.display = 'none'
+        document.body.className = 'lightTheme'
+        mode = 1
+    }
+} 
+
+
+theme.addEventListener('click', handleThmeclick)
