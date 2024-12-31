@@ -29,7 +29,7 @@ const getwindspeed = (s) => {
     return s * 3.6
 }
 
-let theCityName = "mumbai"
+let theCityName = "new delhi"
 
 const getWeatherData = async () => {
     // api url
