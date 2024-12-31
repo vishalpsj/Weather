@@ -7,6 +7,11 @@
         font-size: 62.5%;
     }
 }
+@media screen and (min-width:500px) {
+    .theme{
+        margin-right: 2rem;
+    }
+}
 
 /* tablet screen and larger */
 @media screen and (min-width:768px) {
@@ -22,6 +27,10 @@
     .extra{
         width: 48%;
     }
+    .theme{
+        margin-right: 3rem;
+    }
+
 }
 
 /* laptop and larger screen  */

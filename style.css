@@ -127,7 +127,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
     height: 100%;
     padding: 1rem;
 }
