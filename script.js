@@ -55,7 +55,7 @@ const getWeatherData = async () => {
         reportBox.style.display = "none"
         moreInfo.style.display = "none"
         document.querySelector('.errorMsgbox').style.display = "flex"
-        errorShowing.innerHTML = `We couldn't locate <b>'${theCityName}'</b>, Try another <i class="ri-emotion-unhappy-fill"></i>`
+        errorShowing.innerHTML = `We couldn't locate <b>'${theCityName}'</b>, Try another`
     }
 }
 

@@ -15,6 +15,7 @@ sup{
 
 body{
     width: 100vw;
+    height: fit-content;
     background-image: url(./asset/img/background_small.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +28,7 @@ body{
 
 .container{
     width: 100%;
-    height:100%;
+    height:fit-content;
     background-color: rgba(255, 255, 255, 0.259);
     backdrop-filter: blur(15px);
     padding: 2rem;
@@ -82,12 +83,15 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     display: none;
 }
+.errorMsgbox i{
+    font-size: 4rem;
+}
 .errorMsgbox #oopsError{
-    font-size: 6rem;
+    font-size: 4rem;
 }
 .errorMsgbox p{
     font-size: 2.5rem;    
