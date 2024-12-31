@@ -43,13 +43,6 @@ The API is totally free so you can create your own
 2. Sign up for an account and get your API key.
 3. Replace the api key in the JavaScript code with your actual API key.
 
-## Example of API call
-```javascript
-const apiKey = 'YOUR_API_KEY';
-const city = 'London';
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-```
-
 ## Contribution
 
 Feel free to fork this repository and contribute to it. You can submit a pull request if you have any suggestions or improvements.
