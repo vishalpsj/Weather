@@ -29,7 +29,9 @@ let theCityName = "mumbai"
 
 const getWeatherData = async () => {
     // api url
-    const weatherAPI_url = `https://api.openweathermap.org/data/2.5/weather?q=${theCityName}&units=metric&appid=a5518e6d8640c09e4a18003b8e9d533d`;
+    // const weatherAPI_url = `https://api.openweathermap.org/data/2.5/weather?q=${theCityName}&units=metric&appid=a5518e6d8640c09e4a18003b8e9d533d`;
+
+    const weatherAPI_url = `http://localhost:3000/api/weather?city=${theCityName}`;
 
 
     try {
