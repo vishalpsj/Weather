@@ -92,11 +92,6 @@ body {
     -o-border-radius: 20px;
     background-color: var(--inputs-background-clr);
     box-shadow: var(--box-shadow);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-    -moz-transition: background-color 0.3s ease, color 0.3s ease;
-    -ms-transition: background-color 0.3s ease, color 0.3s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -129,6 +124,12 @@ input {
     align-items: center;
     height: 100%;
     padding: 1rem;
+    background-color: var(--inputs-background-clr);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .theme i {
@@ -189,7 +190,6 @@ input {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     font-size: 1.8rem;
-    /* transition: background-color 0.5s ease, color 0.5s ease; */
 }
 
 .weather_report:hover {
