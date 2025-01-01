@@ -65,11 +65,11 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    transition: background-color 0.5s ease, color 0.5s ease;
-    -webkit-transition: background-color 0.5s ease, color 0.5s ease;
-    -moz-transition: background-color 0.5s ease, color 0.5s ease;
-    -ms-transition: background-color 0.5s ease, color 0.5s ease;
-    -o-transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    -ms-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cityEntry {
@@ -92,11 +92,6 @@ body {
     -o-border-radius: 20px;
     background-color: var(--inputs-background-clr);
     box-shadow: var(--box-shadow);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-    -moz-transition: background-color 0.3s ease, color 0.3s ease;
-    -ms-transition: background-color 0.3s ease, color 0.3s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -129,10 +124,17 @@ input {
     align-items: center;
     height: 100%;
     padding: 1rem;
+    background-color: var(--inputs-background-clr);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .theme i {
     font-size: 2.2rem;
+    cursor: pointer;
 }
 
 .light {
@@ -149,7 +151,11 @@ input {
     gap: 1.5rem;
     align-items: center;
     display: none;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    -ms-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .errorMsgbox i {
@@ -184,7 +190,6 @@ input {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     font-size: 1.8rem;
-    /* transition: background-color 0.5s ease, color 0.5s ease; */
 }
 
 .weather_report:hover {
